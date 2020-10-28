@@ -147,3 +147,6 @@ debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
+
+# Zygote
+zygote.critical_window.minute=10
