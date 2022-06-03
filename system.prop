@@ -7,7 +7,7 @@ ro.audio.monitorRotation=true
 bt.max.hfpclient.connections=1
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.saltproject2,com.asus.camera
+vendor.camera.aux.packagelist=com.qualcomm.saltproject2,com.asus.camera
 
 # CNE and DPM
 persist.vendor.cne.feature=1
