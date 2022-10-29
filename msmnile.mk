@@ -504,10 +504,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# TextClassifier
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Tetheroffload
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.0 \
