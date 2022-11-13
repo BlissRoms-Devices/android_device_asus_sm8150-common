@@ -26,6 +26,7 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 
 import org.blissroms.settings.asusparts.doze.DozeUtils;
+import org.blissroms.settings.asusparts.touch.TouchscreenGestureSettings;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -37,7 +38,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        DozeUtils.checkDozeService(context);     
+        DozeUtils.checkDozeService(context);
+        TouchscreenGestureSettings.MainSettingsFragment.restoreTouchscreenGestureStates(context);
+        FileUtils.setValue(AsusParts.GLOVE_PATH, Settings.System.getInt(context.getContentResolver(),
+                AsusParts.KEY_GLOVE_SWITCH, 1));
+        if (DEBUG) Log.d(TAG, "Glove switch = "+(Settings.System.getInt(context.getContentResolver(), AsusParts.KEY_GLOVE_SWITCH, 1)));
     }
 
     private boolean hasRestoredTunable(Context context) {
