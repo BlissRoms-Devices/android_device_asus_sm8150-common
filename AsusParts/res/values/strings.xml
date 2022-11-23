@@ -124,7 +124,6 @@
     <string name="touchscreen_gesture_swipe_left_stylus_title">Swipe left with the stylus</string>
     <string name="touchscreen_gesture_swipe_right_stylus_title">Swipe right with the stylus</string>
     <string name="touchscreen_gesture_long_press_stylus_title">Long press with the stylus</string>
-
     <string name="touchscreen_gesture_action_dialog_title">Gesture action</string>
     <string name="touchscreen_gesture_action_do_nothing">Do nothing</string>
     <string name="touchscreen_gesture_action_flashlight">Toggle flashlight</string>
@@ -140,4 +139,9 @@
     <string name="touchscreen_gesture_action_volume_up">Raise media volume</string>
     <string name="touchscreen_gesture_action_ambient_display">Show ambient display</string>
     <string name="touchscreen_gesture_action_wake_device">Wake device</string>
+
+    <!-- Camera Motor settings -->
+    <string name="camera_retraction_category">Camera retraction</string>
+    <string name="calibrate_camera_angle_title">Calibrate camera angle</string>
+    <string name="calibrate_camera_angle_summary">When the flip angle of the camera is abnormal, calibrate the camera to restore to its original position</string>
 </resources>
