@@ -55,96 +55,96 @@ prebuilt_etc {
 prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
-    src: "ueventd.rc",
+    src: "etc/ueventd.qcom.rc",
     vendor: true,
 }
 
 sh_binary {
     name: "init.class_main.sh",
-    src: "bin/init.class_main.sh",
+    src: "etc/init.class_main.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.crda.sh",
-    src: "bin/init.crda.sh",
+    src: "etc/init.crda.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.mdm.sh",
-    src: "bin/init.mdm.sh",
+    src: "etc/init.mdm.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.class_core.sh",
-    src: "bin/init.qcom.class_core.sh",
+    src: "etc/init.qcom.class_core.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.coex.sh",
-    src: "bin/init.qcom.coex.sh",
+    src: "etc/init.qcom.coex.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.efs.sync.sh",
-    src: "bin/init.qcom.efs.sync.sh",
+    src: "etc/init.qcom.efs.sync.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.sdio.sh",
-    src: "bin/init.qcom.sdio.sh",
+    src: "etc/init.qcom.sdio.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.sensors.sh",
-    src: "bin/init.qcom.sensors.sh",
+    src: "etc/init.qcom.sensors.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qti.chg_policy.sh",
-    src: "bin/init.qti.chg_policy.sh",
+    src: "etc/init.qti.chg_policy.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.early_boot.sh",
-    src: "bin/init.qcom.early_boot.sh",
+    src: "etc/init.qcom.early_boot.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.post_boot.sh",
-    src: "bin/init.qcom.post_boot.sh",
+    src: "etc/init.qcom.post_boot.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.sh",
-    src: "bin/init.qcom.sh",
+    src: "etc/init.qcom.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qti.qcv.sh",
-    src: "bin/init.qti.qcv.sh",
+    src: "etc/init.qti.qcv.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qti.keymaster.sh",
-    src: "bin/init.qti.keymaster.sh",
+    src: "etc/init.qti.keymaster.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qti.dcvs.sh",
-    src: "bin/init.qti.dcvs.sh",
+    src: "etc/init.qti.dcvs.sh",
     vendor: true,
 }
