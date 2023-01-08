@@ -32,13 +32,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.set_kptr.rc",
-    src: "etc/init.set_kptr.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
     sub_dir: "init/hw",

@@ -315,7 +315,6 @@ PRODUCT_PACKAGES += \
     init.asus.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.set_kptr.rc \
     init.target.rc \
     init.qcom.power.rc \
     init.qcom.usb.rc \
