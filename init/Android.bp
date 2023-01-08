@@ -66,12 +66,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.crda.sh",
-    src: "etc/init.crda.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.mdm.sh",
     src: "etc/init.mdm.sh",
     vendor: true,
