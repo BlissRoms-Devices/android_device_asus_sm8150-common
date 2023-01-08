@@ -1,6 +1,3 @@
-on init
-    chown system system /sys/devices/platform/soc/soc\:asustek_googlekey/googlekey_enable
-
 on early-boot
     write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
     write /sys/bus/msm_subsys/devices/subsys1/restart_level RELATED
@@ -96,9 +93,6 @@ on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=1
 on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x18d1
     write /config/usb_gadget/g1/idProduct 0x2d05
-
-on property:persist.google.assistant.enable=*
-    write /sys/devices/platform/soc/soc\:asustek_googlekey/googlekey_enable ${persist.google.assistant.enable}
 
 on post-fs-data
 
