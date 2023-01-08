@@ -66,12 +66,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.coex.sh",
-    src: "etc/init.qcom.coex.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.efs.sync.sh",
     src: "etc/init.qcom.efs.sync.sh",
     vendor: true,
