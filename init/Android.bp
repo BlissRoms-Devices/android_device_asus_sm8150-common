@@ -78,12 +78,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.class_core.sh",
-    src: "etc/init.qcom.class_core.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.coex.sh",
     src: "etc/init.qcom.coex.sh",
     vendor: true,
