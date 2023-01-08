@@ -699,12 +699,6 @@ service qti-testscripts /system/bin/sh /product/etc/init.qcom.testscripts.sh
     oneshot
     seclabel u:r:qti-testscripts:s0
 
-service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
-    class late_start
-    group wifi inet
-    disabled
-    oneshot
-
 on property:sys.boot_completed=1
     start qcom-post-boot
     start qti-testscripts
