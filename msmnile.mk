@@ -313,7 +313,6 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.asus.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
     init.target.rc \
     init.qcom.power.rc \
