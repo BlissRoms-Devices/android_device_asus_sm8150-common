@@ -12,6 +12,10 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Device specific doze package -->
     <string name="config_customDozePackage">org.blissroms.settings.asusparts/org.blissroms.settings.asusparts.doze.DozeSettingsActivity</string>
+
+    <!-- Whether to show Touch Gestures Settings -->
+    <bool name="config_show_touch_gestures_settings">false</bool>
 </resources>
