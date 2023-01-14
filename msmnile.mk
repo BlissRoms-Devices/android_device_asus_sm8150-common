@@ -555,26 +555,10 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    vendor.qti.hardware.fstman@1.0.vendor:64 \
-    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
     vendor.qti.hardware.wifi.hostapd@1.1.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    android.hardware.cas@1.2 \
-    android.hardware.cas@1.2.vendor \
-    android.hardware.wifi@1.0 \
-    android.hardware.wifi@1.0.vendor \
-    android.hardware.wifi@1.1 \
-    android.hardware.wifi@1.1.vendor \
-    android.hardware.wifi@1.2 \
-    android.hardware.wifi@1.2.vendor \
-    android.hardware.wifi@1.3 \
-    android.hardware.wifi@1.3.vendor \
-    android.hardware.wifi@1.4 \
-    android.hardware.wifi@1.4.vendor \
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
