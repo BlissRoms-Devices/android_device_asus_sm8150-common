@@ -66,7 +66,7 @@ ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM8150
 
 # Crypto
