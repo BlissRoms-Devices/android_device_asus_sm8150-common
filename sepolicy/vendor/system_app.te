@@ -17,3 +17,15 @@ allow system_app sysfs_mcu_version:file {read getattr setattr open};
 get_prop(system_app, vendor_asus_prop)
 
 allow system_app self:netlink_kobject_uevent_socket { bind create getopt read setopt };
+
+get_prop(system_app, vendor_odm_tel_prop)
+
+# Factory files
+allow system_app factory_file:file create_file_perms;
+r_dir_file(system_app, factory_file)
+
+# Grip Sensor
+allow system_app proc_driver_grip_sensor:file { open read write };
+
+get_prop(system_app, asus_dongle_prop)
+get_prop(system_app, vendor_asus_sp_prop)

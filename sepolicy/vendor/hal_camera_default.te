@@ -21,3 +21,6 @@ set_prop(hal_camera_default, vendor_camera_prop)
 
 get_prop(hal_camera_default, asus_prop)
 set_prop(hal_camera_default, asus_prop)
+
+get_prop(hal_camera_default, vendor_default_prop)
+get_prop(hal_camera_default, vendor_thermal_prop)

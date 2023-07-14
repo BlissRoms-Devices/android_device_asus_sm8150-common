@@ -16,9 +16,13 @@ allow hal_fingerprint_default vendor_goodix_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_battery_supply:dir search;
 allow hal_fingerprint_default vendor_sysfs_battery_supply:file r_file_perms;
 
+allow hal_fingerprint_default vendor_sysfs_gestures:file w_file_perms;
+allow hal_fingerprint_default vendor_proc_graphics:file w_file_perms;
+
 get_prop(hal_fingerprint_default, vendor_asus_prop)
 
 # Allow hal_fingerprint_default to get vendor_adsprpc_prop
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 
 set_prop(hal_fingerprint_default, vendor_gx_fpd_prop);
+

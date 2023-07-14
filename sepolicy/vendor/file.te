@@ -5,6 +5,9 @@ type vendor_motor_camera, fs_type, proc_type;
 # Display
 type vendor_proc_graphics, fs_type, proc_type;
 
+# Dongle
+type asus_dongle_path , fs_type, sysfs_type;
+
 # EVT
 type vendor_proc_evt, fs_type, proc_type;
 
@@ -15,13 +18,20 @@ type sysfs_mcu_version, sysfs_type, fs_type;
 # Fingerprint
 type vendor_goodix_data_file, file_type, data_file_type;
 
-# rootfs
+# Grip Sensor
+type proc_driver_grip_sensor, fs_type, proc_type;
+
+# Rootfs
 type asusfw_file, file_type;
 type log_file, file_type;
 type bat_file, file_type;
 type demoapp_file, file_type;
+type factory_file, file_type;
 type persist_file, file_type;
 type xrom_file, file_type;
 
 # Smart key
 type vendor_sysfs_gestures, sysfs_type, fs_type;
+
+# Touch
+type sysfs_touch, fs_type, sysfs_type;
