@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libstdc++.vendor \
+    libstdc++_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.displayservice@1.0.vendor \
     android.frameworks.sensorservice@1.0.vendor
