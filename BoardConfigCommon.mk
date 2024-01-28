@@ -181,7 +181,7 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     xrom
 
 # Sepolicy
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH_COMMON)/sepolicy/vendor
 
 # Verified Boot
