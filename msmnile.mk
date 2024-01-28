@@ -543,7 +543,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     hostapd \
     libwpa_client \
     libwifi-hal-ctrl \
