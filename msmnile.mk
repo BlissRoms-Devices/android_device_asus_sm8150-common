@@ -436,7 +436,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5 \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
-    libprotobuf-cpp-full \
     libril \
     librilutils \
     librmnetctl \
@@ -452,8 +451,8 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
