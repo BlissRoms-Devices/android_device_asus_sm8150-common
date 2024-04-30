@@ -35,7 +35,7 @@
     <PreferenceCategory
         android:title="@string/glove_control">
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="glove"
             android:defaultValue="0"
             android:icon="@drawable/ic_glove"

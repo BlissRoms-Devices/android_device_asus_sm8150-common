@@ -19,9 +19,9 @@ package org.blissroms.settings.asusparts.preference;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
-public class SystemSettingSwitchPreference extends SwitchPreference {
+public class SystemSettingSwitchPreference extends SwitchPreferenceCompat {
 
     public SystemSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

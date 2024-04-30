@@ -22,7 +22,6 @@ import android.os.Bundle;
 
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class AsusPartsActivity extends CollapsingToolbarBaseActivity {
 
@@ -31,7 +30,7 @@ public class AsusPartsActivity extends CollapsingToolbarBaseActivity {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction()
-                    .add(R.id.content_frame, new AsusParts())
+                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new AsusParts())
                     .commit();
         }
     }
