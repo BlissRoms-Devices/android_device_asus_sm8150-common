@@ -455,6 +455,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    ApertureOverlay \
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
