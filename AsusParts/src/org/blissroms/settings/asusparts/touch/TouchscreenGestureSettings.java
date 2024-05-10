@@ -34,8 +34,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 
-import com.android.internal.lineage.hardware.LineageHardwareManager;
-import com.android.internal.lineage.hardware.TouchscreenGesture;
+import com.android.internal.bliss.hardware.LineageHardwareManager;
+import com.android.internal.bliss.hardware.TouchscreenGesture;
 
 import org.blissroms.settings.asusparts.R;
 import org.blissroms.settings.asusparts.util.ResourceUtils;
