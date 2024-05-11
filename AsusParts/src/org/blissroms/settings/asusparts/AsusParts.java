@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
  *               2017-2020 The LineageOS Project
+ *               2022-2024 The BlissRoms Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,15 +20,13 @@ package org.blissroms.settings.asusparts;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.preference.PreferenceFragment;
+import android.os.SystemProperties;
+import android.provider.Settings;
 import androidx.preference.Preference;
-import androidx.preference.ListPreference;
 import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
-import android.provider.Settings;
-import android.util.Log;
-
 import org.blissroms.settings.asusparts.doze.DozeSettingsActivity;
 
 public class AsusParts extends PreferenceFragment implements
@@ -35,12 +34,31 @@ public class AsusParts extends PreferenceFragment implements
 
     public static final String KEY_GLOVE_SWITCH = "glove";
     public static final String GLOVE_PATH = "/proc/driver/glove";
-
     private TwoStatePreference mGloveSwitch;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Check system property and remove the category if necessary
+        removeMotorCategoryIfNeeded();
+    }
+
+    private void removeMotorCategoryIfNeeded() {
+        String blissDevice = SystemProperties.get("ro.bliss.device", "");
+
+        if ("I001D".equals(blissDevice)) {
+            PreferenceCategory motorCategory = findPreference("category_motor");
+            if (motorCategory != null) {
+                getPreferenceScreen().removePreference(motorCategory);
+            }
+        }
+    }
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.asusparts, rootKey);
+
         Preference mDozePref = findPreference("doze");
         mDozePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
@@ -51,9 +69,9 @@ public class AsusParts extends PreferenceFragment implements
             }
         });
 
-        mGloveSwitch =  findPreference(KEY_GLOVE_SWITCH);
+        mGloveSwitch = findPreference(KEY_GLOVE_SWITCH);
         mGloveSwitch.setChecked(Settings.System.getInt(getContext().getContentResolver(),
-        KEY_GLOVE_SWITCH, 1) != 0);
+                KEY_GLOVE_SWITCH, 1) != 0);
     }
 
     @Override
@@ -68,7 +86,6 @@ public class AsusParts extends PreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        final String key = preference.getKey();
         return true;
     }
 }
