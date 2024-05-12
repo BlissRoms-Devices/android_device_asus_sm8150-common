@@ -24,6 +24,8 @@ get_prop(system_app, vendor_odm_tel_prop)
 allow system_app factory_file:file create_file_perms;
 r_dir_file(system_app, factory_file)
 
+r_dir_file(system_app, rootfs)
+
 # Grip Sensor
 allow system_app proc_driver_grip_sensor:file { open read write };
 
