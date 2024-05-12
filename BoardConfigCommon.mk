@@ -133,6 +133,9 @@ TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_MODULE_ALIASES += \
     wlan.ko:qca_cld3_wlan.ko
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 

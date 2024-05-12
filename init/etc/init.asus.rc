@@ -100,3 +100,8 @@ service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@
     writepid /dev/cpuset/system-background/tasks
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+# Health
+on boot
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
