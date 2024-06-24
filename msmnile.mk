@@ -409,6 +409,7 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjson.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -479,6 +480,10 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# SQLite
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
 
 # Telephony
 PRODUCT_COPY_FILES += \
