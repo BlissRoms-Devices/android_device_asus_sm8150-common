@@ -646,7 +646,6 @@ vendor/bin/qtigetprop|4d0e9e9adb56cdbe4562c2fa54416aa5eb2968e8
 vendor/bin/qtisetprop|232b6b778234ecf9806f4b9d9a4de9c28b70c108
 vendor/bin/qti|2be2facdbe6007f5444950c2e657c96936de630d
 vendor/bin/rmt_storage|b9fc7997cd07df1cf8c1d6e7b5f3ced772cbac1a
-vendor/bin/ssgtzd|0ddbdd02f58f3fe550c71f5001169be9e2052713
 vendor/bin/tftp_server|d3c9f04e306222a13d51dc3ee089688cc6a3c929
 vendor/etc/data/dsi_config.xml|85f76668d6b6f87402c534f284c286676edefa93
 vendor/etc/data/netmgr_config.xml|d8b0fc8ed7902f687d460bc776971a1642ba9d88
