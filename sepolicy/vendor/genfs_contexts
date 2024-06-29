@@ -35,6 +35,7 @@ genfscon proc /driver/dclick                                                    
 genfscon proc /driver/gesture_type                                                              u:object_r:vendor_proc_graphics:s0
 genfscon proc /driver/glove                                                                     u:object_r:vendor_proc_graphics:s0
 genfscon proc /driver/swipeup                                                                   u:object_r:vendor_proc_graphics:s0
+genfscon sysfs /devices/platform/soc/c80000.i2c/i2c-4/4-0038/dclick_mode	u:object_r:sysfs_touchscreen:s0
 genfscon sysfs /devices/platform/goodix_ts.0/gesture/dclick             u:object_r:vendor_sysfs_gestures:s0
 genfscon sysfs /devices/platform/goodix_ts.0/gesture/gesture_c          u:object_r:vendor_sysfs_gestures:s0
 genfscon sysfs /devices/platform/goodix_ts.0/gesture/gesture_e          u:object_r:vendor_sysfs_gestures:s0

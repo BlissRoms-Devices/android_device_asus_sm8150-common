@@ -18,6 +18,9 @@ type sysfs_mcu_version, sysfs_type, fs_type;
 # Fingerprint
 type vendor_goodix_data_file, file_type, data_file_type;
 
+# Gestures - DT2W
+type sysfs_touchscreen, sysfs_type, fs_type;
+
 # Grip Sensor
 type proc_driver_grip_sensor, fs_type, proc_type;
 

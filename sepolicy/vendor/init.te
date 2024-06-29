@@ -19,3 +19,6 @@ allow init lasercsc:process transition;
 allow init proc_driver_grip_sensor:file { open write };
 allow init vendor_sysfs_gestures:file setattr;
 allow init sysfs_vibrator:lnk_file read;
+
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_touchscreen:file { w_file_perms setattr };
