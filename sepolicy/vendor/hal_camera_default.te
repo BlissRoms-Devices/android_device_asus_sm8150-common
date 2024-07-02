@@ -24,3 +24,5 @@ set_prop(hal_camera_default, asus_prop)
 
 get_prop(hal_camera_default, vendor_default_prop)
 get_prop(hal_camera_default, vendor_thermal_prop)
+
+allow hal_camera_default system_prop:file r_file_perms;

@@ -26,3 +26,4 @@ get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 
 set_prop(hal_fingerprint_default, vendor_gx_fpd_prop);
 
+allow hal_fingerprint_default default_prop:file r_file_perms;
